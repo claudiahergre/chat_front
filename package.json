@@ -18,8 +18,12 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "js-confetti": "^0.11.0",
+    "ng-particles": "^3.10.1",
     "rxjs": "~7.8.0",
+    "socket.io-client": "^4.7.1",
     "tslib": "^2.3.0",
+    "tsparticles-engine": "^2.10.1",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {

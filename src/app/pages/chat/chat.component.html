@@ -1,0 +1,34 @@
+<div class="container">
+
+    <div class="conectados">
+        <div>
+            <input type="checkbox" [(ngModel)]="audioOn"><i>{{audioOn ?'🔊' :'🔇' }}</i>
+        </div>
+        <p>{{numClientes}} usuarios en línea</p>
+    </div>
+
+    <div class="mensajes" #divMensajes>
+
+        <ul>
+            <li *ngFor="let msg of mensajes" class="mensaje" [ngClass]="{propio: (msg.socket_id === socket.id)}">
+                <strong>{{msg.usuario}}: </strong>{{msg.mensaje}}
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="inputs">
+        <div>
+            <label>Usuario</label>
+            <input type="text" [(ngModel)]="data.usuario">
+        </div>
+        <div>
+            <label>Mensaje</label>
+            <input type="text" [(ngModel)]="data.mensaje">
+        </div>
+
+        <button (click)="onClick()">Enviar</button>
+    </div>
+
+
+</div>
